@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <v-header :title="title"></v-header>
+    <v-header left-icon-name="wap-nav" right-icon-name="search" :title="title"></v-header>
   </div>
 </template>
 

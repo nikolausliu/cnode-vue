@@ -1,8 +1,8 @@
 <template>
   <div class="v-header">
-    <van-icon v-if="leftIconName" :name="leftIconName" class="left-icon"></van-icon>
-    <span v-if="title" class="title">{{title}}</span>
-    <van-icon v-if="rightIconName" :name="rightIconName" class="right-icon"></van-icon>
+    <van-icon v-if="leftIconName" :name="leftIconName" class="left-icon" @click="leftIconClickHandle"></van-icon>
+    <span v-if="title" class="title" @click="titleClickHandle">{{title}}</span>
+    <van-icon v-if="rightIconName" :name="rightIconName" class="right-icon" @click="rightIconClickHandle"></van-icon>
   </div>
 </template>
 
@@ -34,6 +34,18 @@ export default {
       type: String,
       default: ''
     }
+  },
+
+  methods: {
+    leftIconClickHandle() {
+      this.$emit('click-left');
+    },
+    titleClickHandle() {
+      this.$emit('click-title');
+    },
+    rightIconClickHandle() {
+      this.$emit('click-right');
+    },
   }
 }
 </script>

@@ -24,7 +24,7 @@
 
 <script>
 import { Icon } from "vant";
-import LoginableAvatar from "@/components/LoginableAvatar";
+import { LoginableAvatar } from '@/components';
 export default {
   name: "v-sidebar",
 

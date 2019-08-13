@@ -1,5 +1,6 @@
 export VHeader from './VHeader';
-export VSidebar from './VSidebar';
 export LoginableAvatar from './LoginableAvatar';
-export ArticleList from './ArticleList';
+export VSidebar from './VSidebar';
 export ArticleListItem from './ArticleListItem';
+export ArticleList from './ArticleList';
+

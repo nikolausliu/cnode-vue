@@ -10,17 +10,20 @@
     <van-popup v-model="sidebarVisible" position="left">
       <v-sidebar></v-sidebar>
     </van-popup>
+
+    <article-list></article-list>
   </div>
 </template>
 
 <script>
 import { Popup } from "vant";
-import { VHeader, VSidebar } from "@/components";
+import { VHeader, VSidebar, ArticleList } from "@/components";
 export default {
   components: {
     [Popup.name]: Popup,
     [VHeader.name]: VHeader,
-    [VSidebar.name]: VSidebar
+    [VSidebar.name]: VSidebar,
+    [ArticleList.name]: ArticleList,
   },
 
   data() {
